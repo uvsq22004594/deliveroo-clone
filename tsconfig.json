@@ -1,4 +1,21 @@
 {
-  "compilerOptions": {},
-  "extends": "expo/tsconfig.base"
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "extends": "expo/tsconfig.base",
+  "exclude": ["__tests__/**/*-test.ts", "*.config.js"],
+  "include": [
+    "src",
+    "App.tsx"
+  ]
 }
